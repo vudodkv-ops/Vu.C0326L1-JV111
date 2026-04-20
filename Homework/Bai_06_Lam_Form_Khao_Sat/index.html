@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Khảo sát</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 30px;
+        }
+
+        .form-box {
+            background-color: white;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Định dạng bảng */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            td {
+            padding: 10px;
+            vertical-align: top; 
+        }
+
+            .label-column {
+            width: 30%;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+          input[type="text"], 
+        input[type="email"], 
+        textarea, 
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .avatar {
+            width: 80px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>PHIẾU KHẢO SÁT</h2>
+        
+        <form>
+            <table>
+                <tr>
+                    <td class="label-column">Ảnh đại diện:</td>
+                    <td>
+                     <img src="https://mautranhve.vn/wp-content/uploads/2025/10/lay-loi-doi-avatar-shin-cute-15.jpg" alt="Avatar" class="avatar">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-column">Họ và tên:</td>
+                    <td>
+                        <input type="text" placeholder="Nhập tên của bạn">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-column">Email:</td>
+                    <td>
+                        <input type="email" placeholder="email@gmail.com">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-column">Khu vực:</td>
+                    <td>
+                        <select>
+                            <option>Hà Nội</option>
+                            <option>Đà Nẵng</option>
+                            <option>TP. Hồ Chí Minh</option>
+                            <option>Thái Bình</option>
+                            <option>Hưng Yên</option>
+                            <option>Nam Định</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-column"> Ghi Chú :</td>
+                    <td>
+                        <textarea rows="4" placeholder="Viết nội dung tại đây..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Gửi thông tin</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
